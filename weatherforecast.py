@@ -21,7 +21,7 @@ window.title("Weather App")
 window.geometry('815x450')
 window.config(bg='#0370F7')
 window.resizable(height=False, width=False)
-title_bar_icon = PhotoImage(file='./Images/Ico.png')
+title_bar_icon = PhotoImage(file='./Ico.png')
 window.iconphoto(True, title_bar_icon)
 
 def getweather(*args):
@@ -75,7 +75,7 @@ def getweather(*args):
         messagebox.showerror("Weather App","Please Check Your Internet Connection")
 
 
-search_bar_image = PhotoImage(file='./Images/SearchBar.png')
+search_bar_image = PhotoImage(file='./SearchBar.png')
 sb_image = Label(image=search_bar_image, background='#0370F7')
 sb_image.place(x=230, y=10)
 
@@ -89,12 +89,12 @@ weather_in_text.config(text='WEATHER IN')
 weather_in_text.place(x=200, y=85)
 
 
-app_logo = PhotoImage(file='./Images/App_Logo.png')
+app_logo = PhotoImage(file='./App_Logo.png')
 logo = Label(image=app_logo, background='#0370F7')
 logo.place(x=35, y=105)
 
 
-bottom_bar_image = PhotoImage(file='./Images/BottomBar.png')
+bottom_bar_image = PhotoImage(file='./BottomBar.png')
 bb_image = Label(image=bottom_bar_image,background='#fc2b35')
 bb_image.pack(side='bottom')
 
@@ -166,7 +166,7 @@ version = Label(text="Suraj Pragallapati", font=('Calibri', 10), background='#0D
 version.place(x=350, y=415)
 
 
-search_icon_image = PhotoImage(file='./Images/Search_Icon.png')
+search_icon_image = PhotoImage(file='./Search_Icon.png')
 si_button = Button(image=search_icon_image, border=0, background='#0D1117', activebackground='#0D1117', cursor='hand2', command=getweather)
 si_button.place(x=535, y=18)
 
